@@ -96,18 +96,51 @@ header {
   justify-self: end;
   align-self: center;
 }
+@media (max-width: 992px) {
+  .articleLeft {
+    grid-template-columns: 1fr;
+  }
+  .article {
+  margin-bottom: 50px;
+
+    width: 100%;
+    justify-self: center;
+  }
+  .imgContent {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
+}
 .articleRight {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
 }
 .articleRight .article {
+  margin-bottom: 50px;
   justify-self: end;
   align-self: center;
+  order: 1;
 }
 .articleRight .imgContent {
   justify-self: start;
   align-self: center;
+  order: 2;
+}
+@media (max-width: 992px) {
+  .articleRight {
+    grid-template-columns: 1fr;
+  }
+  .articleRight .article {
+    width: 100%;
+    justify-self: center;
+  }
+  .articleRight .imgContent {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
 }
 img {
   width: 100%;
