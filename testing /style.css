@@ -1,0 +1,122 @@
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 60px;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.generalBanner {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: #fff;
+}
+.options {
+  display: flex;
+  gap: 30px;
+}
+.optionLink {
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.optionLink:hover {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.bannerSection {
+  width: 100%;
+  height: 600px;
+  padding: 150px 0;
+  display: block;
+  position: relative;
+  top: -55px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  background-image: url('assets/banner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buttonBanner {
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+  background-color: #ee057b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buttonBanner:hover {
+  background-color: #000000;
+  transition: background-color 0.3s;
+}
+.articleLeft {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+.article {
+  width: 500px;
+  justify-self: start;
+  align-self: center;
+}
+.imgContent {
+  width: 300px;
+  height: 300px;
+  justify-self: end;
+  align-self: center;
+}
+.articleRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+.articleRight .article {
+  justify-self: end;
+  align-self: center;
+}
+.articleRight .imgContent {
+  justify-self: start;
+  align-self: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 800px;
+}
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
