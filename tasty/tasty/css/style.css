@@ -482,8 +482,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Satisfy", cursive;
 }
 #fh5co-featured-menu .fh5co-item-wrap, #fh5co-gallery .fh5co-item-wrap, #fh5co-reservation-form .fh5co-item-wrap {
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 #fh5co-featured-menu .fh5co-item, #fh5co-gallery .fh5co-item, #fh5co-reservation-form .fh5co-item {
   float: left;
@@ -562,9 +562,22 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-featured-testimony .img-to-responsive img {
   margin-bottom: 20px;
 }
+.drinksContainer{
+  margin-bottom: 120px;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.img-responsive {
+  height: 280px;
+  object-fit: cover;
+}
 @media screen and (max-width: 768px) {
   #fh5co-featured-testimony .img-to-responsive img {
     max-width: 100%;
+  }
+  .drinksContainer{
+    display: inline-block;
   }
 }
 #fh5co-featured-testimony blockquote {
