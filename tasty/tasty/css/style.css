@@ -570,8 +570,19 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
 }
 .img-responsive {
-  height: 280px;
+  height: 180px;
   object-fit: cover;
+}
+.extrasContainer .fh5co-item{
+  margin-bottom: 120px;
+  justify-content: center;
+  text-align: center;
+}
+
+.extrasContainer .fh5co-item .img-responsive{
+  display:inline-block;
+  justify-content: center;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-featured-testimony .img-to-responsive img {
